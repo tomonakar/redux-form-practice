@@ -1,0 +1,71 @@
+$icons-font-path: '../../node_modules/semantic-ui-sass/icons' !default;
+$flags-image-path: '../../node_modules/semantic-ui-sass/images' !default;
+
+@import 'semantic-ui-sass/semantic-ui';
+@import './_color';
+
+.ui.checkbox label, .ui.checkbox + label {
+    color: inherit;
+
+    &:hover {
+        color: $blue;
+    }
+
+    &:before {
+        border-radius: 0;
+    }
+}
+
+.ui.checkbox input:checked ~ .box:after, .ui.checkbox input:checked ~ label:after {
+    color: $navy;
+}
+
+.ui.selection.dropdown {
+    min-width: 8em;
+    min-height: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 0;
+}
+
+.ui.dropdown.selected, .ui.dropdown .menu .selected.item {
+    background-color: $blue;
+}
+
+.ui.dropdown .menu > .item:hover {
+    background-color: $light-blue;
+}
+
+.ui.dropdown .menu .active.item {
+    font-weight: normal;
+}
+
+.ui.form input:not([type]),
+.ui.form input[type="date"],
+ .ui.form input[type="datetime-local"],
+ .ui.form input[type="email"],
+ .ui.form input[type="number"],
+ .ui.form input[type="password"],
+ .ui.form input[type="search"],
+ .ui.form input[type="tel"],
+ .ui.form input[type="time"],
+ .ui.form input[type="text"],
+ .ui.form input[type="file"],
+ .ui.form input[type="url"] {
+     border-radius: 0;
+ }
+
+ .ui.form input:not([type]):focus,
+ .ui.form input[type="date"]:focus,
+ .ui.form input[type="datetime-local"]:focus,
+ .ui.form input[type="email"]:focus,
+ .ui.form input[type="number"]:focus,
+ .ui.form input[type="password"]:focus,
+ .ui.form input[type="search"]:focus,
+ .ui.form input[type="tel"]:focus,
+ .ui.form input[type="time"]:focus,
+ .ui.form input[type="text"]:focus,
+ .ui.form input[type="file"]:focus,
+ .ui.form input[type="url"]:focus {
+     border-radius: 0;
+ }

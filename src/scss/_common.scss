@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'YuGothicWin';
+    font-weight: normal;
+    src: local('YuGothic-Medium'), /* PostScript Name = localの正式な指定方法 */
+    local('Yu Gothic Medium'),     /* PostScript Nameを認識できないChrome用にFull Nameを指定 */
+    local('YuGothic-Regular');     /* 游ゴシックMediumが存在しないWindows8.1用 */
+}
+
+@font-face {
+    font-family: 'YuGothicWin';
+    font-weight: bold;
+    src: local('YuGothic-Bold'), /* PostScript Name = localの正式な指定方法 */
+    local('Yu Gothic');          /* PostScript Nameを認識できないChrome用にFull Nameを指定 */
+}
+
+body {
+    width: $body-width;
+    margin: 0 auto;
+    font-family : YuGothicWin/* Windows調整用 */, YuGothic/* Mac用 */, sans-serif;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
